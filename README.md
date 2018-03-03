@@ -11,7 +11,7 @@ Service expose with codecentric code for spring boot admin server. This simple c
 
 
 # Docker Hub
-docker pull bpedroso/machine-destroyer
+docker pull bpedroso/bootadmin
 
 --> Because hub.docker.com is the default registry, you do not need to set the registry URL value.
 
@@ -26,7 +26,7 @@ mvn docker:build -X |grep 'Successfully built'|awk '{print $NF}'
 
 docker tag \[OPTIONS\] <IMAGE> \[REGISTRYHOST/\]\[USERNAME/\]NAME\[:TAG\]  # Tag <image> for upload to registry
 
-docker tag 05ef89eb5c42 bpedroso/machine-destroyer:latest
+docker tag 05ef89eb5c42 bpedroso/bootadmin:latest
 
 
 ## 3 - Login on your registry
@@ -36,7 +36,7 @@ docker login -u $REGISTRY_USERNAME -p $REGISTRY_PASSWORD \[REGISTRYHOST\]
 
 ## 4 - Push the image to your registry
 
-docker push hub.docker.com/r/bpedroso/machine-destroyer:latest
+docker push hub.docker.com/r/bpedroso/bootadmin:latest
 
 
 # Heroku
