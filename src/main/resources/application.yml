@@ -1,0 +1,19 @@
+server:
+  port: 8181
+  
+spring:
+  application:
+    name: bootadmin
+  boot:
+    admin:
+      context-path: /builderadmin
+
+# Logging  
+logging:
+  pattern:
+    console: "%date{dd/MM/yyyy HH:mm:ss.SSS} %-5level [%thread] %logger{1.}: %message%n"
+  level:
+    root: DEBUG
+    org.springframework: DEBUG
+    org.apache.coyote: INFO
+    org.apache.http: INFO
