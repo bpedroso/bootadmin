@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>bootadmin</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Spring Boot Admin project</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -60,6 +60,10 @@
 							<include>${project.build.finalName}.jar</include>
 						</resource>
 					</resources>
+					<imageTags>
+						<imageTag>${project.version}</imageTag>
+						<imageTag>latest</imageTag>
+					</imageTags>
 				</configuration>
 			</plugin>
 		</plugins>
